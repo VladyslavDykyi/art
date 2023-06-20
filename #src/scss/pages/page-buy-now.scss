@@ -1,0 +1,23 @@
+//font-family: 'Lato', sans-serif;
+//font-family: 'Playfair Display', serif;
+@import "_header";
+@import "_block-now";
+@import "_breadcrumb";
+@import "_pagination";
+@import "_default";
+@import "_footer";
+
+
+.link-arrow {
+
+	&:hover {
+		& path {
+			fill: #409B7A;
+		}
+	}
+	&:active {
+		& path {
+			fill: #29654F;
+		}
+	}
+}

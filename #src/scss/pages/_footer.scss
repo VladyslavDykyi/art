@@ -1,0 +1,30 @@
+.footer {
+	background-color: #120E00;
+	font-size: 18px;
+	&-container {
+		max-width: 1040px;
+	}
+	& a {
+		color: #fff;
+	}
+	& .contant {
+		padding-left: 24px;
+	}
+	& .btn-group {
+		width: 100%;
+	}
+	& label {
+		display: block;
+		max-width: 340px;
+		width: 100%;
+		& .form-control {
+			background: #FEFEFE;
+			border-radius: 4px 0 0 4px;
+			padding: 0.782rem 0.75rem;
+		}
+	}
+	& .btn {
+		max-width: 110px;
+		border-radius: 0 4px 4px 0;
+	}
+}
