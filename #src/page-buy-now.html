@@ -20,14 +20,7 @@
 
 @@include('./html/_header.html')
 <main class="wrapper flex-grow-1">
-	<div class="container">
-		<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="#">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Library</li>
-			</ol>
-		</nav>
-	</div>
+	@@include('./html/_breadcrumb.html')
 	<div class="container-xxl bloc-now">
 		<div class="row bloc-now-title">
 			<div class="col-12 d-flex justify-content-between align-items-center">
@@ -343,6 +336,8 @@
 					<li class="page-item"><a class="page-link" href="#">1</a></li>
 					<li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a></li>
 					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
 					<li class="page-item"><a class="page-link" href="#">Next</a></li>
 				</ul>
 			</nav>
