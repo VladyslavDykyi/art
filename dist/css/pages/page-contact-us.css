@@ -63,8 +63,29 @@ header a.buy-now {
   margin-bottom: 0;
 }
 
+.contact-form-file label {
+  margin-bottom: 0;
+}
+
+.contact-form-file input {
+  padding: 0.535rem 1rem;
+  font-size: 18px;
+  line-height: 165.5%;
+  color: #2D7158;
+  border: 1px solid #2D7158;
+  background: #F4F8F6;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.contact-form-file input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #2D7158;
+}
+
 .contact-form-btn {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .footer {
@@ -131,7 +152,7 @@ body {
   border-color: #2D7158;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  padding: 0.532rem 1.5rem 0.532rem;
+  padding: 0.431rem 1rem;
 }
 
 .btn-success:hover {
@@ -216,6 +237,20 @@ body {
 
 .info-contact {
   margin-top: 6px;
+}
+
+.info-contact:first-of-type {
+  border-top: 1px solid #B7B6B2;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.info-contact:last-of-type .nav {
+  grid-gap: 20px;
+}
+
+.info-contact:last-of-type .nav-link {
+  padding: 0;
 }
 
 .info-contact h3 {

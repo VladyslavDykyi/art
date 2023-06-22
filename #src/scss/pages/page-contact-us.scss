@@ -13,7 +13,21 @@ body {
 	margin-top: 36px;
 }
 .info-contact {
+
 	margin-top: 6px;
+	&:first-of-type {
+		border-top: 1px solid #B7B6B2;
+		padding-top: 12px;
+		margin-top: 12px;
+	}
+	&:last-of-type {
+		& .nav {
+			grid-gap: 20px;
+			&-link {
+				padding: 0;
+			}
+		}
+	}
 	& h3 {
 		font-size: 24px;
 		line-height: 150%;
