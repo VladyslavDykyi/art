@@ -19,14 +19,60 @@
 <body class="d-flex flex-column min-vh-100">
 @@include('./html/_header.html')
 <main class="wrapper flex-grow-1">
+	<div class="container-xxl">
+		@@include('./html/_page-list-auc.html')
+	</div>
 	@@include('./html/_breadcrumb.html')
 	@@include('./html/_page-current-auction.html')
-	@@include('./html/_component-contact-us.html')
+	@@include('./html/_page-current-auction-list.html')
 </main>
 @@include('./html/_footer.html')
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-
+<script>
+	const swiper = new Swiper(".mySwiper", {
+		slidesPerView: 1,
+		// spaceBetween: 10,
+		centeredSlidesBounds: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			640: {
+				slidesPerView: 2,
+				// spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+			1024: {
+				slidesPerView: 4,
+				// spaceBetween: 30,
+			},
+		},
+	});
+	// const swiper = new Swiper('.mySwiper', {
+	// 	slidesPerView: 3,
+	// 	direction: getDirection(),
+	// 	navigation: {
+	// 		nextEl: '.swiper-button-next',
+	// 		prevEl: '.swiper-button-prev',
+	// 	},
+	// 	on: {
+	// 		resize: function () {
+	// 			swiper.changeDirection(getDirection());
+	// 		},
+	// 	},
+	// });
+	//
+	// function getDirection() {
+	// 	var windowWidth = window.innerWidth;
+	// 	var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+	//
+	// 	return direction;
+	// }
+</script>
 </body>
 </html>
