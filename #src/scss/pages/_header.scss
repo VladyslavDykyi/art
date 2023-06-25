@@ -2,10 +2,23 @@ header > nav > div:first-child {
 	border-bottom: 1px solid rgba(95, 95, 95, 0.2);
 }
 header a.nav-link,
+header span.nav-link,
 header a.dropdown-item {
 	font-size: 1.125rem;
 	@media screen and (max-width: 1150px) {
 		font-size: .87rem;
+	}
+	@media screen and (max-width: 992px) {
+		font-size: 1.125rem;
+	}
+}
+@media screen and (max-width: 992px) {
+	.navbar-collapse.collapse.show {
+		padding-left: 26px;
+	}
+	.navbar-nav.align-items-center {
+		flex-direction: row-reverse;
+		justify-content: space-around;
 	}
 }
 header a.buy-now {

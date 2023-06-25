@@ -7,6 +7,10 @@
 	& a {
 		color: #fff;
 	}
+	& .nav .nav-link {
+		padding-left: 0;
+		display: inline-block;
+	}
 	& .contant {
 		padding-left: 24px;
 	}

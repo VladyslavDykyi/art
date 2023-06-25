@@ -3,6 +3,7 @@ header > nav > div:first-child {
 }
 
 header a.nav-link,
+header span.nav-link,
 header a.dropdown-item {
   font-size: 1.125rem;
 }
@@ -116,6 +117,11 @@ header a.buy-now {
 
 .footer a {
   color: #fff;
+}
+
+.footer .nav .nav-link {
+  padding-left: 0;
+  display: inline-block;
 }
 
 .footer .contant {
@@ -298,12 +304,34 @@ body {
 
 @media screen and (max-width: 1150px) {
   header a.nav-link,
+  header span.nav-link,
   header a.dropdown-item {
     font-size: .87rem;
   }
 }
 
 @media screen and (max-width: 992px) {
+  header a.nav-link,
+  header span.nav-link,
+  header a.dropdown-item {
+    font-size: 1.125rem;
+  }
+
+  .navbar-collapse.collapse.show {
+    padding-left: 26px;
+  }
+
+  .navbar-nav.align-items-center {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+
   .dropdown-menu {
     border: none;
   }
