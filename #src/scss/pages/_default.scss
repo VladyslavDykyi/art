@@ -12,6 +12,30 @@ body {
 	background-color: #fff !important;
 	box-shadow: 0 6px 8px #ECECEC;
 }
+.btn-auction {
+	font-size: 1.125rem;
+	line-height: 165%;
+	background-color: #F4F8F6;
+	border-color: #B7B6B2;
+	border-radius: 4px;
+	padding: 0.431rem 1rem;
+	color: #2D7158;
+	width: 100%;
+	&:hover {
+		background-color: #409B7A;
+		border-color: #409B7A;
+		color: #FFF;
+	}
+	&:active {
+		background-color: #29654F;
+		border-color: #29654F;
+	}
+	&:disabled {
+		background-color: #B7B6B2;
+		border-color: #B7B6B2;
+	}
+}
+
 .btn-success {
 	font-size: 1.125rem;
 	line-height: 165%;
@@ -19,6 +43,7 @@ body {
 	border-color: #2D7158;
 	border-radius: 4px;
 	padding: 0.431rem 1rem;
+	color: #FFF;
 	&:hover {
 		background-color: #409B7A;
 		border-color: #409B7A;

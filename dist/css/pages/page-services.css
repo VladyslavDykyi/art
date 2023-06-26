@@ -168,6 +168,34 @@ body {
           box-shadow: 0 6px 8px #ECECEC;
 }
 
+.btn-auction {
+  font-size: 1.125rem;
+  line-height: 165%;
+  background-color: #F4F8F6;
+  border-color: #B7B6B2;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  padding: 0.431rem 1rem;
+  color: #2D7158;
+  width: 100%;
+}
+
+.btn-auction:hover {
+  background-color: #409B7A;
+  border-color: #409B7A;
+  color: #FFF;
+}
+
+.btn-auction:active {
+  background-color: #29654F;
+  border-color: #29654F;
+}
+
+.btn-auction:disabled {
+  background-color: #B7B6B2;
+  border-color: #B7B6B2;
+}
+
 .btn-success {
   font-size: 1.125rem;
   line-height: 165%;
@@ -176,6 +204,7 @@ body {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   padding: 0.431rem 1rem;
+  color: #FFF;
 }
 
 .btn-success:hover {
