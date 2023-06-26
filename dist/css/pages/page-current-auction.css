@@ -719,7 +719,7 @@ header a.buy-now {
     font-size: 1.125rem;
   }
 
-  .navbar-collapse.collapse.show {
+  .navbar-collapse.collapse {
     padding-left: 26px;
   }
 
