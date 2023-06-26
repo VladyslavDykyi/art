@@ -47,6 +47,22 @@ header a.buy-now {
   font-size: 26px;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #2D7158;
+}
+
+header a.nav-link.active,
+header a.dropdown-item.active {
+  color: #2D7158;
+  text-decoration: underline;
+}
+
+span.nav-link:hover {
+  color: #120E00;
+  text-decoration: none;
+}
+
 .art {
   display: -webkit-box;
   display: -webkit-flex;
