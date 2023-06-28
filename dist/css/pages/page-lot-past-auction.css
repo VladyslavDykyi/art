@@ -646,7 +646,7 @@ span.nav-link:hover {
   font-size: 1.125rem;
   margin-bottom: 2px;
   display: -webkit-box;
-  -webkit-line-clamp: 11;
+  -webkit-line-clamp: 15;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
