@@ -118,8 +118,8 @@ body {
 .h2-pf {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 135%;
   color: #120E00;
 }
 
@@ -203,57 +203,6 @@ span.nav-link:hover {
 
 .breadcrumb-item.active {
   color: #120E00;
-}
-
-.auction-autor {
-  width: 100%;
-  max-width: 420px;
-  margin-bottom: 32px;
-}
-
-.auction-autor > .btn-secondary {
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  border: 1px solid #A8891A;
-  background-color: transparent;
-  color: #5F5F5F;
-  font-size: 1.25rem;
-  line-height: 165%;
-  width: 100%;
-  max-width: 420px;
-  text-align: left;
-  position: relative;
-}
-
-.auction-autor > .btn-secondary:active {
-  background-color: #A8891A;
-}
-
-.auction-autor > .dropdown-toggle::after {
-  position: absolute;
-  right: 10px;
-  top: -webkit-calc(50% - 10px);
-  top: calc(50% - 10px);
-}
-
-.auction-autor > .dropdown-menu.show {
-  width: 100%;
-  border: 1px solid #A8891A;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-}
-
-.auction-autor > .dropdown-menu.show .dropdown-item.active {
-  background-color: #A8891A;
-}
-
-.auction-autor > .dropdown-menu.show .dropdown-item.active:hover {
-  background-color: #A8891A;
-  cursor: auto;
-}
-
-.auction-autor > .dropdown-menu.show .dropdown-item:hover {
-  background-color: rgba(168, 137, 26, 0.3);
 }
 
 .auction-list {
@@ -477,5 +426,11 @@ span.nav-link:hover {
 
   .dropdown-toggle {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h2-pf {
+    font-size: 1.5rem;
   }
 }

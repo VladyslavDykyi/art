@@ -1,7 +1,7 @@
 'use strict';
 
 ( function (){
-	const swiper = new Swiper(".mySwiper", {
+	const swiper = new Swiper(".mySwiper1", {
 		slidesPerView: 1,
 		centeredSlidesBounds: true,
 		navigation: {

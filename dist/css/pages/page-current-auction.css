@@ -118,8 +118,8 @@ body {
 .h2-pf {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 135%;
   color: #120E00;
 }
 
@@ -776,6 +776,10 @@ span.nav-link:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .h2-pf {
+    font-size: 1.5rem;
+  }
+
   .art {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
