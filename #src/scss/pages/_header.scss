@@ -5,7 +5,7 @@ header a.nav-link,
 header span.nav-link,
 header a.dropdown-item {
 	font-size: 1.125rem;
-	@media screen and (max-width: 1150px) {
+	@media screen and (max-width: 1185px) {
 		font-size: .87rem;
 	}
 	@media screen and (max-width: 992px) {
@@ -78,7 +78,22 @@ header a.dropdown-item {
 		text-decoration: underline;
 	}
 }
-
+header .entered {
+	color: #2D7158;
+	display: inline-flex;
+	align-items: center;
+	& span {
+		font-size: 1.25rem;
+		color: #120E00;
+		margin-right: 8px;
+		@media screen and (max-width: 1185px) {
+			font-size: .87rem;
+		}
+		@media screen and (max-width: 992px) {
+			font-size: 1.125rem;
+		}
+	}
+}
 span.nav-link {
 	&:hover {
 		color: #120E00;
