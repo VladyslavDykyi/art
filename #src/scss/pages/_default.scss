@@ -58,6 +58,7 @@ body {
 	}
 }
 .btn.btn-outline-success {
+	background-color: transparent;
 	border-color: #2D7158;
 	color: #2D7158;
 	&:hover {
@@ -71,6 +72,7 @@ body {
 		color: #FFF;
 	}
 	&.active {
+		background-color: #2D7158;
 		color: #FFF;
 	}
 }

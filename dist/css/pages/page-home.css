@@ -349,6 +349,7 @@ body {
 }
 
 .btn.btn-outline-success {
+  background-color: transparent;
   border-color: #2D7158;
   color: #2D7158;
 }
@@ -366,6 +367,7 @@ body {
 }
 
 .btn.btn-outline-success.active {
+  background-color: #2D7158;
   color: #FFF;
 }
 
