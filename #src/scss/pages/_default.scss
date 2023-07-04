@@ -36,7 +36,7 @@ body {
 	}
 }
 
-.btn-success {
+.btn.btn-success {
 	font-size: 1.125rem;
 	line-height: 165%;
 	background-color: #2D7158;
@@ -57,7 +57,23 @@ body {
 		border-color: #B7B6B2;
 	}
 }
-
+.btn.btn-outline-success {
+	border-color: #2D7158;
+	color: #2D7158;
+	&:hover {
+		background-color: #409B7A;
+		border-color: #409B7A;
+		color: #FFF;
+	}
+	&:active {
+		background-color: #29654F;
+		border-color: #29654F;
+		color: #FFF;
+	}
+	&.active {
+		color: #FFF;
+	}
+}
 .inp {
 	padding: 0.68rem 1.25rem;
 	border: 1px solid #A8891A;
