@@ -27,7 +27,7 @@
 	@@include('./html/_breadcrumb.html')
 	@@include('./html/_page-variation-auction.html')
 	@@include('./html/_page-current-auction-timer.html')
-	@@include('./html/_page-current-auction-autor.html')
+	@@include('./html/_page-current-auction-author.html')
 	@@include('./html/_page-current-auction.html')
 	@@include('./html/_page-current-auction-list.html')
 </main>
@@ -45,6 +45,8 @@
 		minimumResultsForSearch: -1,
 		placeholder: "Country",
 	});
+	// 05.07.23
+	$('.select-author').select2();
 </script>
 </body>
 </html>

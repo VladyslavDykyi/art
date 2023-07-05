@@ -1,42 +1,7 @@
-.auction-autor {
-	width: 100%;
-	max-width: 420px;
-	margin-bottom: 32px;
-	& > .btn-secondary {
-		border-radius: 4px;
-		border: 1px solid #A8891A;
-		background-color: transparent;
-		color: #5F5F5F;
-		font-size: 1.25rem;
-		line-height: 165%;
-		width: 100%;
+.author {
+	& .inputs-wrapper {
+		display: block;
 		max-width: 420px;
-		text-align: left;
-		position: relative;
-		&:active {
-			background-color: #A8891A;
-		}
-	}
-	& > .dropdown-toggle::after {
-		position: absolute;
-		right: 10px;
-		top: calc(50% - 10px);
-	}
-	& > .dropdown-menu.show {
 		width: 100%;
-		border: 1px solid #A8891A;
-		border-radius: 4px;
-		& .dropdown-item {
-			&.active {
-				background-color: #A8891A;
-				&:hover {
-					background-color: #A8891A;
-					cursor: auto;
-				}
-			}
-			&:hover {
-				background-color: rgba(168, 137, 26, 0.3);
-			}
-		}
 	}
 }

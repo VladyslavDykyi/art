@@ -405,6 +405,7 @@ span.nav-link:hover {
   margin-bottom: 0;
 }
 
+.auction-status-start time,
 .auction-status-start span {
   color: #5F5F5F;
   margin-right: 8px;
@@ -455,55 +456,10 @@ span.nav-link:hover {
   cursor: pointer;
 }
 
-.auction-autor {
-  width: 100%;
+.author .inputs-wrapper {
+  display: block;
   max-width: 420px;
-  margin-bottom: 32px;
-}
-
-.auction-autor > .btn-secondary {
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  border: 1px solid #A8891A;
-  background-color: transparent;
-  color: #5F5F5F;
-  font-size: 1.25rem;
-  line-height: 165%;
   width: 100%;
-  max-width: 420px;
-  text-align: left;
-  position: relative;
-}
-
-.auction-autor > .btn-secondary:active {
-  background-color: #A8891A;
-}
-
-.auction-autor > .dropdown-toggle::after {
-  position: absolute;
-  right: 10px;
-  top: -webkit-calc(50% - 10px);
-  top: calc(50% - 10px);
-}
-
-.auction-autor > .dropdown-menu.show {
-  width: 100%;
-  border: 1px solid #A8891A;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-}
-
-.auction-autor > .dropdown-menu.show .dropdown-item.active {
-  background-color: #A8891A;
-}
-
-.auction-autor > .dropdown-menu.show .dropdown-item.active:hover {
-  background-color: #A8891A;
-  cursor: auto;
-}
-
-.auction-autor > .dropdown-menu.show .dropdown-item:hover {
-  background-color: rgba(168, 137, 26, 0.3);
 }
 
 .auction-list {
@@ -533,6 +489,12 @@ span.nav-link:hover {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.card.auction .card-img-top {
+  height: 320px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card.auction .card-info {
@@ -771,6 +733,18 @@ span.nav-link:hover {
 .select2-dropdown {
   background-color: #fff;
   border: 1px solid #A8891A;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #A8891A;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  outline: none;
+  color: #5f5f5f;
+}
+
+.select2-results__option {
+  color: #5f5f5f;
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {

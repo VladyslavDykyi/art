@@ -26,8 +26,8 @@
 			<div class="col-12 auction-status-info">
 				<div class="auction-status-start">
 					<p>
-						<span class="starts">Starts on: </span>
-						<span>Jun 24, 2023 5:00 PM GMT+3</span>
+						<!-- 05.07.2023 -->
+						<time>Jun 24, 2023 5:00 PM GMT+3</time>
 					</p>
 					<p>
 						<span class="location">Location: </span>
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 	</div>
-	@@include('./html/_page-current-auction-autor.html')
+	@@include('./html/_page-current-auction-author.html')
 	@@include('./html/_page-past-auction-one.html')
 </main>
 @@include('./html/_footer.html')
@@ -68,6 +68,8 @@
 		minimumResultsForSearch: -1,
 		placeholder: "Country",
 	});
+	// 05.07.23
+	$('.select-author').select2();
 </script>
 </body>
 </html>
