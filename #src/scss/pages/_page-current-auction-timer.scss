@@ -124,10 +124,22 @@
 	&-text {
 		margin-bottom: 0;
 		line-height: 150%;
-		& .read-more {
-			color: #2D7158;
-			font-weight: 600;
-			cursor: pointer;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 4;
+		&.active {
+			display: block;
+			overflow: visible;
+			-webkit-line-clamp: none;
 		}
+	}
+	& .read-more {
+		color: #2D7158;
+		font-weight: 600;
+		cursor: pointer;
+		text-decoration: none;
+		padding: 0;
+		border: none;
 	}
 }
