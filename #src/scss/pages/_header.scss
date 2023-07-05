@@ -12,7 +12,11 @@ header a.dropdown-item {
 		font-size: 1.125rem;
 	}
 }
-
+header a.dropdown-item {
+	&:active {
+		background-color: #409b7a;
+	}
+}
 @media screen and (max-width: 992px) {
 	.navbar-collapse {
 		padding-left: 26px;

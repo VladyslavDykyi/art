@@ -156,6 +156,10 @@ header a.dropdown-item {
   font-size: 1.125rem;
 }
 
+header a.dropdown-item:active {
+  background-color: #409b7a;
+}
+
 header a.buy-now {
   font-weight: 600;
   font-size: 24px;
@@ -268,6 +272,7 @@ span.nav-link:hover {
 .card.auction .auction-img-image picture:nth-child(1) {
   grid-row: 1/3;
   grid-column: 1/2;
+  height: 275px;
 }
 
 .card.auction .auction-img-image picture:nth-child(2) {
