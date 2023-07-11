@@ -76,6 +76,9 @@
 					text-decoration: underline;
 				}
 			}
+			& textarea {
+				height: 246px;
+			}
 		}
 		& .form-check-input {
 			display: none;
@@ -100,7 +103,6 @@
 			&:after {
 				content: '';
 				position: absolute;
-
 			}
 			&:after {
 				width: 21px;
@@ -124,7 +126,7 @@
 				z-index: 10;
 			}
 		}
-		& p {
+		& .modal-text {
 			display: inline-flex;
 			align-items: baseline;
 			justify-content: center;
@@ -132,18 +134,20 @@
 			margin-top: 12px;
 			& .btn.btn-link {
 				margin-left: 8px;
+			}
+		}
+		& .btn.btn-link {
+			color: #2D7158;
+			text-decoration: none;
+			font-size: 1rem;
+			padding: 0;
+			border: none;
+			&:hover {
+				color: #409B7A;
+			}
+			&:active {
 				color: #2D7158;
-				text-decoration: none;
-				font-size: 1rem;
-				padding: 0;
-				border: none;
-				&:hover {
-					color: #409B7A;
-				}
-				&:active {
-					color: #2D7158;
-					text-decoration: underline;
-				}
+				text-decoration: underline;
 			}
 		}
 		&-title {

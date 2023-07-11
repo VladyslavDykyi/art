@@ -908,6 +908,10 @@ span.nav-link:hover {
   text-decoration: underline;
 }
 
+.modal-body .contact-form-input textarea {
+  height: 246px;
+}
+
 .modal-body .form-check-input {
   display: none;
 }
@@ -965,7 +969,7 @@ span.nav-link:hover {
   z-index: 10;
 }
 
-.modal-body p {
+.modal-body .modal-text {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -982,8 +986,11 @@ span.nav-link:hover {
   margin-top: 12px;
 }
 
-.modal-body p .btn.btn-link {
+.modal-body .modal-text .btn.btn-link {
   margin-left: 8px;
+}
+
+.modal-body .btn.btn-link {
   color: #2D7158;
   text-decoration: none;
   font-size: 1rem;
@@ -991,11 +998,11 @@ span.nav-link:hover {
   border: none;
 }
 
-.modal-body p .btn.btn-link:hover {
+.modal-body .btn.btn-link:hover {
   color: #409B7A;
 }
 
-.modal-body p .btn.btn-link:active {
+.modal-body .btn.btn-link:active {
   color: #2D7158;
   text-decoration: underline;
 }
