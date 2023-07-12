@@ -649,193 +649,238 @@ body {
   padding: .688rem .75rem;
 }
 
-.orders-info {
-  margin-top: 44px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.list-messages-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.orders-count p {
-  color: #5F5F5F;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-.orders-select {
-  width: 100%;
-  max-width: 300px;
-}
-
-.orders-select label {
-  display: none;
-}
-
-.orders-list {
-  padding-top: 32px;
-  padding-bottom: 48px;
-}
-
-.orders-list > h2 {
-  color: #5F5F5F;
-  margin-top: 48px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.orders-item {
-  margin-bottom: 24px;
-}
-
-.orders-item:last-child {
-  margin-bottom: 0;
-}
-
-.orders-item-header {
-  background-color: #EAEAEA;
-  padding: 13px 22px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-border-radius: 4px 4px 0 0;
-          border-radius: 4px 4px 0 0;
-  border: 1px solid #B7B6B2;
-  border-bottom: none;
-}
-
-.orders-item-invoice,
-.orders-item-date,
-.orders-item-name,
-.orders-item-location,
-.orders-item-price {
-  font-weight: 700;
-  margin-right: 32px;
-}
-
-.orders-item-invoice {
-  color: #120E00;
-}
-
-.orders-item-date {
-  color: #5F5F5F;
-}
-
-.orders-item-name {
-  color: #5F5F5F;
-}
-
-.orders-item-location {
-  color: #5F5F5F;
-}
-
-.orders-item-price {
-  margin-left: auto;
-  margin-right: 0;
-  color: #120E00;
-}
-
-.orders-item-main {
-  -webkit-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
-  border: 1px solid #B7B6B2;
-  border-top: none;
-  padding: 24px 22px 16px;
-}
-
-.orders-item-main-status {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1rem .25rem;
 }
 
-.orders-item-main-status span {
-  color: #120E00;
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.orders-item-main-status .btn.btn-link {
-  color: #2D7158;
-  text-decoration: underline;
-  font-size: 1.125rem;
-  padding: 0;
-  border: none;
-}
-
-.orders-item-main-status .btn.btn-link:hover {
-  color: #409B7A;
-}
-
-.orders-item-main-status .btn.btn-link:active {
-  color: #2D7158;
-  text-decoration: underline;
-}
-
-.orders-item-main-text {
-  margin-top: 6px;
-  color: #5F5F5F;
-  margin-bottom: 0;
-}
-
-.orders-item-main-link {
-  margin-top: 20px;
-  max-width: 205px;
-  width: 100%;
-}
-
-.orders-item-main-card {
-  margin-top: 24px;
+.list-messages-header-item .btn-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  grid-gap: 8px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 16px;
 }
 
-.orders-item-main picture {
-  display: block;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  border: 1px solid #EAEAEA;
-  width: 118px;
-  height: 118px;
+.list-messages-header-item .btn {
+  color: #5F5F5F;
+  font-size: 1.125rem;
+  line-height: 165%;
+  padding: 0;
+  margin: 0 8px;
 }
 
-.orders-item-main-img {
-  width: 118px;
-  height: 118px;
+.list-messages-body .no-conversations {
+  padding: 28px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 165%;
+  color: #5F5F5F;
+  text-align: center;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid #B7B6B2;
+  background-color: #F4F8F6;
+}
+
+.list-messages-body-item {
+  display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: 30px 60px -webkit-calc(40% - 90px) -webkit-calc(60% - 120px) 120px;
+  grid-template-columns: 30px 60px calc(40% - 90px) calc(60% - 120px) 120px;
+  padding: .25rem;
+  border-top: 1px solid #E7E6E3;
+}
+
+.list-messages-body-item:first-child {
+  border-top: 1px solid #B7B6B2;
+}
+
+.list-messages-body-item:last-child {
+  border-bottom: 1px solid #E7E6E3;
+}
+
+.list-messages-body-item.new {
+  background-color: #F4F8F6;
+}
+
+.list-messages-body-item.new .item-name p,
+.list-messages-body-item.new .item-name a,
+.list-messages-body-item.new .item-data,
+.list-messages-body-item.new .item-text {
+  font-weight: 600;
+}
+
+.list-messages-body-item .item-check {
+  grid-row: 1/2;
+  margin-right: 8px;
+}
+
+.list-messages-body-item .item-check .form-check-label {
+  height: 30px;
+}
+
+.list-messages-body-item .item-img {
+  grid-row: 1/2;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-messages-body-item .item-img picture {
+  display: inline-block;
+}
+
+.list-messages-body-item .item-img img {
+  width: 52px;
+  height: 52px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.orders-item-main-title {
-  color: #120E00;
-  font-size: 1.125rem;
-  margin-bottom: 8px;
+.list-messages-body-item .item-img i {
+  font-size: 30px;
+  color: #2d7158;
 }
 
-.orders-item-main-number {
-  color: #5F5F5F;
-  font-size: 1.125rem;
-  margin-bottom: 8px;
+.list-messages-body-item .item-name {
+  grid-row: 1/2;
+  margin-right: 8px;
 }
 
-.orders-item-main-price {
-  color: #5F5F5F;
-  font-size: 1.125rem;
+.list-messages-body-item .item-name p,
+.list-messages-body-item .item-name a {
+  font-size: 1rem;
   margin-bottom: 0;
+  line-height: 165%;
+  color: #5F5F5F;
+}
+
+.list-messages-body-item .item-name a {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  text-decoration: none;
+  display: block;
+}
+
+.list-messages-body-item .item-text {
+  grid-row: 1/2;
+  margin-right: 8px;
+}
+
+.list-messages-body-item .item-text a {
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 165%;
+  color: #5F5F5F;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  text-decoration: none;
+  display: block;
+}
+
+.list-messages-body-item .item-data {
+  grid-row: 1/2;
+  text-align: right;
+}
+
+.list-messages-body-item .item-data time {
+  font-size: 1rem;
+  margin-bottom: 0;
+  line-height: 165%;
+  color: #5F5F5F;
+}
+
+.list-messages .form-check-input {
+  display: none;
+}
+
+.list-messages .form-check-input:checked + label:before {
+  display: block;
+}
+
+.list-messages .form-check-input:checked + label:after {
+  background-color: #B7B6B2;
+}
+
+.list-messages .form-check {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-messages .form-check-label {
+  padding-left: 40px;
+  color: #5F5F5F;
+  font-size: 1.125rem;
+  line-height: 165%;
+  position: relative;
+  cursor: pointer;
+}
+
+.list-messages .form-check-label:before,
+.list-messages .form-check-label:after {
+  content: '';
+  position: absolute;
+}
+
+.list-messages .form-check-label:after {
+  width: 22px;
+  height: 22px;
+  display: block;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #B7B6B2;
+  top: -webkit-calc(50% - 11px);
+  top: calc(50% - 11px);
+  left: 0;
+  background-color: transparent;
+}
+
+.list-messages .form-check-label:before {
+  display: block;
+  width: 8px;
+  height: 12px;
+  -webkit-transform: rotateZ(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotateZ(40deg);
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  top: -webkit-calc(50% - 9px);
+  top: calc(50% - 9px);
+  left: 7px;
+  z-index: 10;
 }
 
 @media screen and (max-width: 1185px) {
@@ -905,6 +950,42 @@ body {
     margin-top: 0;
     font-size: 1.75rem;
   }
+
+  .list-messages-header {
+    display: none;
+  }
+
+  .list-messages-body-item {
+    grid-template-columns: 60px -webkit-calc(100% - 140px) 80px;
+    grid-template-columns: 60px calc(100% - 140px) 80px;
+  }
+
+  .list-messages-body-item .item-check {
+    display: none;
+  }
+
+  .list-messages-body-item .item-img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .list-messages-body-item .item-name {
+    grid-column: 2/3;
+  }
+
+  .list-messages-body-item .item-name p {
+    display: none;
+  }
+
+  .list-messages-body-item .item-text {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .list-messages-body-item .item-data {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -923,72 +1004,6 @@ body {
   .personal-data-links a.btn {
     font-size: 1rem;
     padding: .35rem;
-  }
-
-  .orders-item-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    grid-gap: 6px;
-  }
-
-  .orders-item-invoice,
-  .orders-item-date,
-  .orders-item-name,
-  .orders-item-location,
-  .orders-item-price {
-    margin-right: 0;
-  }
-
-  .orders-item-price {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .orders-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-
-  .orders-count {
-    margin-bottom: 12px;
-  }
-
-  .orders-count p {
-    font-size: 1.125rem;
-  }
-
-  .orders-select {
-    max-width: 100%;
-  }
-
-  .orders-item-header {
-    padding: 12px 10px;
-  }
-
-  .orders-item-main {
-    padding: 8px 10px 12px;
-  }
-
-  .orders-item-main-status {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    grid-gap: 8px;
-  }
-
-  .orders-item-main-status .btn.btn-link {
-    text-align: right;
   }
 }
 

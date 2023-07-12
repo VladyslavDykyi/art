@@ -807,6 +807,11 @@ body {
     padding: 16px;
   }
 
+  .personal-data-links a.btn {
+    font-size: 1rem;
+    padding: .35rem;
+  }
+
   .personal-data .inputs-wrapper .btn.btn-input.dropdown-toggle.show,
   .personal-data .inputs-wrapper .btn.btn-input.dropdown-toggle.active,
   .personal-data .inputs-wrapper .btn.btn-input.dropdown-toggle {
