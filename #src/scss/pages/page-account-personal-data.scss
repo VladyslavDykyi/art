@@ -47,10 +47,19 @@
 		color: #120E00;
 	}
 	& .inputs-wrapper {
+		& label {
+			display: none;
+		}
+		& .select2,
+		& input,
+		& select {
+			margin-top: 16px;
+		}
 		& .btn.btn-input.dropdown-toggle.show,
 		& .btn.btn-input.dropdown-toggle.active,
 		& .btn.btn-input.dropdown-toggle {
 			padding: 0.68rem .125rem 0.68rem 1.25rem;
+			margin-top: 16px;
 			border: 1px solid #A8891A;
 			font-size: 20px;
 			line-height: 150%;
@@ -80,6 +89,19 @@
 			}
 			& ~ .inp {
 				padding: 0.68rem 1rem 0.68rem .5rem;
+			}
+		}
+		& .btn-outline-success {
+			display: flex;
+			align-items: center;
+			grid-gap: 12px;
+			font-size: 1.25rem;
+			line-height: 150%;
+			color: #2D7158;
+			padding: 0.68rem 2rem;
+			margin-top: 16px;
+			&:hover {
+				color: #FFFFFF;
 			}
 		}
 	}
