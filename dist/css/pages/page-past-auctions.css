@@ -156,8 +156,13 @@ header a.dropdown-item {
   font-size: 1.125rem;
 }
 
-header a.dropdown-item:active {
+header .dropdown-menu a.dropdown-item:active {
   background-color: #409b7a;
+}
+
+header .dropdown-menu a.dropdown-item.active {
+  background-color: #2D7158;
+  color: #FFFFFF;
 }
 
 header a.buy-now {
@@ -353,6 +358,164 @@ span.nav-link:hover {
   margin-bottom: 10px;
   color: #5F5F5F;
   margin-top: auto;
+}
+
+.auction-list {
+  grid-gap: 30px 0;
+}
+
+.auction-list > * {
+  padding: 0;
+}
+
+.card.auction {
+  border: none;
+  height: 100%;
+  --bs-card-inner-border-radius: 0;
+  padding: 0 30px;
+}
+
+.card.auction .card-body {
+  padding: 8px 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card.auction .card-img-top {
+  height: 320px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card.auction .card-info {
+  margin-bottom: 4px;
+}
+
+.card.auction .card-info p {
+  margin-bottom: 0;
+}
+
+.card.auction .card-info p:first-of-type {
+  font-size: 18px;
+  color: #120E00;
+}
+
+.card.auction .card-info p:last-of-type {
+  color: #29654F;
+}
+
+.card.auction .card-info-sold p {
+  margin-bottom: 0;
+}
+
+.card.auction .card-info-sold p:first-of-type {
+  margin-bottom: 2px;
+  color: #29654F;
+}
+
+.card.auction .card-info-sold p:last-of-type {
+  font-size: 18px;
+  color: #120E00;
+}
+
+.card.auction .card-title {
+  margin-bottom: 4px;
+  color: #120E00;
+}
+
+.card.auction .card-text {
+  margin-bottom: 8px;
+  color: #5F5F5F;
+  margin-top: auto;
+}
+
+.card.auction .card-form input {
+  font-size: 14px;
+  line-height: 16px;
+  padding: .4rem 1rem;
+  border-color: #B7B6B2;
+}
+
+.card.auction .card-form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #B7B6B2;
+}
+
+.card.auction .card-form .form-control::-webkit-input-placeholder {
+  color: #5F5F5F;
+}
+
+.card.auction .card-form .form-control::-moz-placeholder {
+  color: #5F5F5F;
+}
+
+.card.auction .card-form .form-control:-ms-input-placeholder {
+  color: #5F5F5F;
+}
+
+.card.auction .card-form .form-control::-ms-input-placeholder {
+  color: #5F5F5F;
+}
+
+.card.auction .card-form .form-control::placeholder {
+  color: #5F5F5F;
+}
+
+.card.auction .card-form .form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card.auction .card-form .form-control::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card.auction .card-form .form-control:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card.auction .card-form .form-control::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card.auction .card-form .form-control::placeholder,
+.card.auction .card-form .btn-success {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card.auction .card-form .btn-success {
+  padding: .4rem 1rem;
+}
+
+.card.auction .carousel:hover .carousel-control-next,
+.card.auction .carousel:hover .carousel-control-prev {
+  opacity: 1;
+}
+
+.card.auction .carousel .carousel-control-next,
+.card.auction .carousel .carousel-control-prev {
+  opacity: 0;
+}
+
+.card.auction .carousel .carousel-control-prev-icon,
+.card.auction .carousel .carousel-control-next-icon {
+  background-color: rgba(1, 1, 1, 0.4);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 5px solid transparent;
 }
 
 .pagination .page-item.active .page-link {

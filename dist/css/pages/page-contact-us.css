@@ -8,8 +8,13 @@ header a.dropdown-item {
   font-size: 1.125rem;
 }
 
-header a.dropdown-item:active {
+header .dropdown-menu a.dropdown-item:active {
   background-color: #409b7a;
+}
+
+header .dropdown-menu a.dropdown-item.active {
+  background-color: #2D7158;
+  color: #FFFFFF;
 }
 
 header a.buy-now {

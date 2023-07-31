@@ -12,9 +12,13 @@ header a.dropdown-item {
 		font-size: 1.125rem;
 	}
 }
-header a.dropdown-item {
+header .dropdown-menu a.dropdown-item {
 	&:active {
 		background-color: #409b7a;
+	}
+	&.active {
+		background-color: #2D7158;
+		color: #FFFFFF;
 	}
 }
 @media screen and (max-width: 992px) {
