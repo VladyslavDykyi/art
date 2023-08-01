@@ -238,6 +238,26 @@ span.nav-link:hover {
   text-decoration: none;
 }
 
+.bag {
+  position: relative;
+}
+
+.bag-count {
+  position: absolute;
+  padding: 3px 4px;
+  color: #fff;
+  background-color: #0c4128;
+  font-size: 12px;
+  line-height: 12px;
+  min-width: 18px;
+  height: 18px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  left: 20px;
+  top: 10px;
+}
+
 .art {
   display: -webkit-box;
   display: -webkit-flex;
