@@ -48,6 +48,10 @@
 	& .card-title {
 		margin-bottom: 4px;
 		color: #120E00;
+		height: 72px;
+		@media screen and (max-width: 576px) {
+			height: auto;
+		}
 	}
 	& .card-text {
 		margin-bottom: 8px;

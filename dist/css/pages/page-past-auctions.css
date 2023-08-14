@@ -449,6 +449,7 @@ span.nav-link:hover {
 .card.auction .card-title {
   margin-bottom: 4px;
   color: #120E00;
+  height: 72px;
 }
 
 .card.auction .card-text {
@@ -1096,6 +1097,12 @@ span.nav-link:hover {
   .btn.btn-input.dropdown-toggle.active,
   .btn.btn-input.dropdown-toggle {
     padding: 0.68rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card.auction .card-title {
+    height: auto;
   }
 }
 
