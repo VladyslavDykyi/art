@@ -344,7 +344,10 @@ span.nav-link:hover {
 .card.auction .card-title {
   margin-bottom: 4px;
   color: #120E00;
-  height: 72px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
 }
 
 .card.auction .card-text {
@@ -1297,7 +1300,7 @@ span.nav-link:hover {
 
 @media screen and (max-width: 576px) {
   .card.auction .card-title {
-    height: auto;
+    -webkit-line-clamp: 4;
   }
 
   .lot-name {
