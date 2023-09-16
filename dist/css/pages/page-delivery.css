@@ -32,8 +32,8 @@ header a.buy-now {
 .dropdown-toggle::after {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.14645 6.14645C1.34171 5.95118 1.65829 5.95118 1.85355 6.14645L7.5 11.7929L13.1464 6.14645C13.3417 5.95118 13.6583 5.95118 13.8536 6.14645C14.0488 6.34171 14.0488 6.65829 13.8536 6.85355L7.85355 12.8536C7.65829 13.0488 7.34171 13.0488 7.14645 12.8536L1.14645 6.85355C0.951184 6.65829 0.951184 6.34171 1.14645 6.14645Z' fill='%23120E00'/%3e%3c/svg%3e ");
   background-repeat: no-repeat;
-  width: 1em;
-  height: 1em;
+  width: 16px;
+  height: 16px;
   border: none;
   vertical-align: -0.045em;
 }
@@ -1012,6 +1012,12 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  header a.nav-link,
+  header span.nav-link,
+  header a.dropdown-item {
+    font-size: .75rem;
+  }
+
   .input-group {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -1020,14 +1026,16 @@ body {
 }
 
 @media screen and (max-width: 1185px) {
+  header .entered span {
+    font-size: .87rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
   header a.nav-link,
   header span.nav-link,
   header a.dropdown-item {
-    font-size: .87rem;
-  }
-
-  header .entered span {
-    font-size: .87rem;
+    font-size: .72rem;
   }
 }
 
@@ -1042,12 +1050,26 @@ body {
     padding-left: 26px;
   }
 
+  .navbar-nav.align-items-baseline {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+
   .navbar-nav.align-items-center {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around;
