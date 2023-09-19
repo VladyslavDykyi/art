@@ -794,7 +794,7 @@ body {
   margin-bottom: 16px;
 }
 
-.blog-item-text {
+.blog-item-text p {
   color: #5F5F5F;
   font-size: 1.125rem;
   -webkit-box-flex: 1;
@@ -805,6 +805,7 @@ body {
   -webkit-line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  position: relative;
 }
 
 .blog-item-info {
@@ -845,7 +846,7 @@ body {
   font-size: 1.25rem;
 }
 
-.blog-list .blog-item-text {
+.blog-list .blog-item-text p {
   font-size: 1rem;
   -webkit-line-clamp: 3;
 }
