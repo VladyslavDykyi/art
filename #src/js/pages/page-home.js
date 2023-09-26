@@ -17,6 +17,6 @@
 	})
 	const myCarouselElement = document.querySelectorAll('.carousel');
 	myCarouselElement.forEach((item) => new bootstrap.Carousel(item,{
-		interval : false,
+		interval:3000,
 	}));
-})()
+})();
