@@ -20,6 +20,10 @@
 	}
 	&-title {
 		color: #120E00;
+		text-decoration: none;
+		&:hover {
+			color: #120E00;
+		}
 	}
 	&-text {
 		line-height: 24px;

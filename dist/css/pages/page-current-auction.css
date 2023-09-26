@@ -577,6 +577,11 @@ span.nav-link:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
   -webkit-line-clamp: 2;
+  text-decoration: none;
+}
+
+.card.auction .card-title:hover {
+  color: #120E00;
 }
 
 .card.auction .card-text {

@@ -68,6 +68,10 @@
 		font-size: 1.125rem;
 		margin-bottom: 10px;
 		color: #120E00;
+		text-decoration: none;
+		&:hover {
+			color: #120E00;
+		}
 	}
 	& .card-date {
 		margin-bottom: 10px;

@@ -52,8 +52,12 @@
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 		-webkit-line-clamp: 2;
+		text-decoration: none;
 		@media screen and (max-width: 576px) {
 			-webkit-line-clamp: 4;
+		}
+		&:hover {
+			color: #120E00;
 		}
 	}
 	& .card-text {

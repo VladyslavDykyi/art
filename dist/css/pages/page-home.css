@@ -187,6 +187,11 @@ span.nav-link:hover {
 
 .card-title {
   color: #120E00;
+  text-decoration: none;
+}
+
+.card-title:hover {
+  color: #120E00;
 }
 
 .card-text {
