@@ -794,7 +794,7 @@ body {
   margin-bottom: 16px;
 }
 
-.blog-item-text p {
+.blog-item-text {
   color: #5F5F5F;
   font-size: 1.125rem;
   -webkit-box-flex: 1;
@@ -846,7 +846,7 @@ body {
   font-size: 1.25rem;
 }
 
-.blog-list .blog-item-text p {
+.blog-list .blog-item-text {
   font-size: 1rem;
   -webkit-line-clamp: 3;
 }
