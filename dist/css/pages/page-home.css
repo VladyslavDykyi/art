@@ -862,6 +862,7 @@ body {
   padding-bottom: 45px;
   border-bottom: 2px solid #B7B6B2;
   margin-bottom: 24px;
+  position: relative;
 }
 
 .carousel-main .carousel-item > picture {
@@ -917,6 +918,10 @@ body {
   color: #FFF;
 }
 
+.carousel-main .carousel-caption > .btn.btn-success.my-3 {
+  margin-bottom: 50px !important;
+}
+
 .carousel-main .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='54' height='54' viewBox='0 0 54 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='27' cy='27' r='27' transform='matrix(-1 0 0 1 54 0)' fill='rgba(254, 254, 254, 0.3)' /%3e%3cpath d='M7.29289 26.2929C6.90237 26.6834 6.90237 27.3166 7.29289 27.7071L13.6569 34.0711C14.0474 34.4616 14.6805 34.4616 15.0711 34.0711C15.4616 33.6805 15.4616 33.0474 15.0711 32.6569L9.41422 27L15.0711 21.3431C15.4616 20.9526 15.4616 20.3195 15.0711 19.9289C14.6805 19.5384 14.0474 19.5384 13.6569 19.9289L7.29289 26.2929ZM46 26L8 26V28L46 28V26Z' fill='%23120E00'/%3e%3c/svg%3e ");
 }
@@ -932,6 +937,12 @@ body {
 }
 
 .carousel-main .counter {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
   min-width: 241px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -968,6 +979,12 @@ body {
   header span.nav-link,
   header a.dropdown-item {
     font-size: .72rem;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .carousel-main .carousel-caption > .btn.btn-success.my-3 {
+    margin-bottom: 80px !important;
   }
 }
 
@@ -1101,6 +1118,12 @@ body {
   }
 }
 
+@media screen and (max-width: 580px) {
+  .carousel-main .carousel-caption > .btn.btn-success.my-3 {
+    margin-bottom: 50px !important;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .carousel-main .carousel-caption-title h2 {
     font-size: 16px;
@@ -1127,7 +1150,7 @@ body {
 }
 
 @media screen and (max-width: 425px) {
-  .carousel-main .carousel-caption > a {
+  .carousel-main .carousel-caption > .btn.btn-success.my-3 {
     padding: 0.532rem 0.5rem 0.532rem;
     font-size: 17px;
   }
