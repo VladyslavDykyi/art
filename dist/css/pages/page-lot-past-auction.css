@@ -1118,6 +1118,7 @@ span.nav-link:hover {
   margin-bottom: 8px;
 }
 
+.lot-text-description p,
 .lot-text-description {
   color: #120E00;
   font-size: 1.125rem;
@@ -1128,6 +1129,7 @@ span.nav-link:hover {
   overflow: hidden;
 }
 
+.lot-text-description p.active,
 .lot-text-description.active {
   -webkit-line-clamp: 1000;
 }

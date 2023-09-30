@@ -12,11 +12,13 @@
 :root {
 	--swiper-theme-color: #120E00;
 }
+
 .featured-slider {
 	padding-bottom: 0;
 	border-bottom: none;
 	margin-bottom: 0;
 }
+
 .lot {
 	&-title {
 		color: #5F5F5F;
@@ -25,74 +27,89 @@
 		@media screen and (max-width: 768px) {
 			font-size: 1.375rem;
 		}
+
 		& span {
 			font-style: italic;
 		}
 	}
+
 	&-name {
 		margin-bottom: 28px;
 		@media screen and (max-width: 576px) {
 			margin-bottom: 14px;
 		}
 	}
+
 	&-info {
 		margin-bottom: 12px;
 		@media screen and (max-width: 425px) {
 			flex-direction: column;
 		}
+
 		& > h3 {
 			color: #2D7158;
 			margin-bottom: 0;
 		}
+
 		& > p {
 			color: #5F5F5F;
 			font-size: 1.125rem;
 			margin-bottom: 0;
 		}
+
 		& > .timer {
 			color: #CF331E;
 		}
 	}
+
 	&-label {
 		color: #5F5F5F;
 		font-size: 1.25rem;
 		margin-bottom: 8px;
 	}
+
 	&-btn-buy {
 		width: 100%;
 		margin-bottom: 32px;
 		font-size: 1.25rem;
 		margin-top: 16px;
 	}
+
 	&-price {
 		margin-bottom: 16px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
 		& > p {
 			color: #120E00;
 			font-size: 2.75rem;
 			line-height: 100%;
 			margin-bottom: 0;
 		}
+
 		& > span {
 			color: #5F5F5F;
 			font-size: 1.5rem;
 		}
+
 		@media screen and (max-width: 580px) {
 			margin-bottom: 16px;
 		}
 	}
+
 	&-title-auction {
 		color: #120E00;
 		font-weight: 600;
 		padding-top: 16px;
 		margin-bottom: 8px;
 	}
+
 	&-description {
 		display: flex;
 		grid-gap: 12px;
 		margin-bottom: 16px;
+
 		&-img {
 			width: 116px;
 			height: 92px;
@@ -102,17 +119,20 @@
 				height: 71px;
 			}
 		}
+
 		&-info {
 
 		}
+
 		&-title {
 			color: #120E00;
 			margin-bottom: 0;
 			font-weight: 600;
 			@media screen and (max-width: 425px) {
-				font-size: 1rem!important;
+				font-size: 1rem !important;
 			}
 		}
+
 		&-date {
 			color: #5F5F5F;
 			font-size: 1.125rem;
@@ -121,20 +141,25 @@
 				font-size: .875rem;
 			}
 		}
+
 		&-link {
 			color: #2D7158;
 			text-decoration: none;
+
 			&:hover {
 				color: #409B7A;
 				text-decoration: underline;
 			}
 		}
 	}
+
 	&-title-description {
 		font-weight: 600;
 		color: #120E00;
 		margin-bottom: 8px;
 	}
+
+	&-text-description p,
 	&-text-description {
 		color: #120E00;
 		font-size: 1.125rem;
@@ -143,19 +168,23 @@
 		-webkit-line-clamp: 15;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+
 		&.active {
 			-webkit-line-clamp: 1000;
 		}
 	}
+
 	&-link {
 		color: #5F5F5F;
 		border: none;
 		text-decoration: none;
 		grid-gap: 8px;
 		background-color: transparent;
+
 		&:hover {
 			color: #2D7158;
 		}
+
 		&.active {
 			& i {
 				transform: rotateX(180deg);
@@ -171,6 +200,7 @@
 		right: 0;
 		left: auto;
 	}
+
 	& .swiper-button-prev,
 	& .swiper-rtl .swiper-button-next {
 		left: 0;
@@ -179,8 +209,10 @@
 
 
 }
+
 .mySwiper-for {
 	margin-bottom: 24px;
+
 	& picture {
 		padding: 0 50px;
 		display: block;
@@ -189,6 +221,7 @@
 		@media screen and (max-width: 768px) {
 			height: 230px;
 		}
+
 		& img {
 			object-fit: contain;
 			width: 100%;
@@ -196,6 +229,7 @@
 		}
 	}
 }
+
 .mySwiper-nav {
 	& picture {
 		padding: 0 12px;
@@ -205,6 +239,7 @@
 		@media screen and (max-width: 768px) {
 			height: 120px;
 		}
+
 		& img {
 			object-fit: contain;
 			width: 100%;

@@ -474,6 +474,7 @@ span.nav-link:hover {
   color: #120E00;
 }
 
+.auction-status-text p,
 .auction-status-text {
   margin-bottom: 0;
   line-height: 150%;
@@ -483,6 +484,7 @@ span.nav-link:hover {
   -webkit-line-clamp: 4;
 }
 
+.auction-status-text p.active,
 .auction-status-text.active {
   display: block;
   overflow: visible;
