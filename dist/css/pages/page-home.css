@@ -954,6 +954,16 @@ body {
   color: #120E00;
 }
 
+.carousel-main .live {
+  color: #BF1616;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 50px;
+}
+
 @media screen and (max-width: 1200px) {
   header a.nav-link,
   header span.nav-link,

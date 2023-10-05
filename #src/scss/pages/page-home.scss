@@ -141,4 +141,11 @@
 			margin-bottom: 16px;
 		}
 	}
+	& .live {
+		color: #BF1616;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 50px;
+	}
 }
