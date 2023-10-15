@@ -129,6 +129,7 @@
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 		-webkit-line-clamp: 4;
+		&.active p,
 		&.active {
 			display: block;
 			overflow: visible;

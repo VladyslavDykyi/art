@@ -484,7 +484,9 @@ span.nav-link:hover {
   -webkit-line-clamp: 4;
 }
 
+.auction-status-text p.active p,
 .auction-status-text p.active,
+.auction-status-text.active p,
 .auction-status-text.active {
   display: block;
   overflow: visible;
