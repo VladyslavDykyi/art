@@ -4,6 +4,22 @@ body {
   font-weight: 400;
 }
 
+button.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  grid-gap: 12px !important;
+}
+
 .wrapper {
   margin-bottom: 60px;
   margin-top: 36px;
@@ -18,7 +34,8 @@ body {
 .btn-auction {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #F4F8F6;
+  background-color: #F4F8F6 !important;
+  -webkit-appearance: none;
   border-color: #B7B6B2;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -28,25 +45,26 @@ body {
 }
 
 .btn-auction:hover {
-  background-color: #409B7A;
+  background-color: #409B7A !important;
   border-color: #409B7A;
   color: #FFF;
 }
 
 .btn-auction:active {
-  background-color: #29654F;
+  background-color: #29654F !important;
   border-color: #29654F;
 }
 
 .btn-auction:disabled {
-  background-color: #B7B6B2;
+  background-color: #B7B6B2 !important;
   border-color: #B7B6B2;
 }
 
 .btn.btn-success {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #2D7158;
+  background-color: #2D7158 !important;
+  -webkit-appearance: none;
   border-color: #2D7158;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -55,40 +73,41 @@ body {
 }
 
 .btn.btn-success:hover {
-  background-color: #409B7A;
+  background-color: #409B7A !important;
   border-color: #409B7A;
 }
 
 .btn.btn-success:active {
-  background-color: #29654F;
+  background-color: #29654F !important;
   border-color: #29654F;
 }
 
 .btn.btn-success:disabled {
-  background-color: #B7B6B2;
+  background-color: #B7B6B2 !important;
   border-color: #B7B6B2;
 }
 
 .btn.btn-outline-success {
-  background-color: transparent;
+  background-color: transparent !important;
+  -webkit-appearance: none;
   border-color: #2D7158;
   color: #2D7158;
 }
 
 .btn.btn-outline-success:hover {
-  background-color: #409B7A;
+  background-color: #409B7A !important;
   border-color: #409B7A;
   color: #FFF;
 }
 
 .btn.btn-outline-success:active {
-  background-color: #29654F;
+  background-color: #29654F !important;
   border-color: #29654F;
   color: #FFF;
 }
 
 .btn.btn-outline-success.active {
-  background-color: #2D7158;
+  background-color: #2D7158 !important;
   color: #FFF;
 }
 
@@ -322,6 +341,20 @@ span.nav-link:hover {
   color: #120E00;
 }
 
+.variation-auction {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.variation-auction > * {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 content;
+      -ms-flex: 0 1 content;
+          flex: 0 1 content;
+}
+
 .auction-status {
   margin: 16px 0 32px;
 }
@@ -478,19 +511,17 @@ span.nav-link:hover {
 .auction-status-text {
   margin-bottom: 0;
   line-height: 150%;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 4;
 }
 
-.auction-status-text p.active p,
-.auction-status-text p.active,
-.auction-status-text.active p,
+.auction-status-text {
+  overflow: hidden;
+  max-height: 100px;
+}
+
 .auction-status-text.active {
   display: block;
   overflow: visible;
-  -webkit-line-clamp: none;
+  max-height: none;
 }
 
 .auction-status .read-more {
@@ -500,6 +531,14 @@ span.nav-link:hover {
   text-decoration: none;
   padding: 0;
   border: none;
+  display: none !important;
+}
+
+.auction-status .read-more.active {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .author .inputs-wrapper {
@@ -574,6 +613,7 @@ span.nav-link:hover {
   color: #120E00;
 }
 
+.card.auction .card-title a,
 .card.auction .card-title {
   margin-bottom: 4px;
   color: #120E00;
@@ -584,6 +624,7 @@ span.nav-link:hover {
   text-decoration: none;
 }
 
+.card.auction .card-title a:hover,
 .card.auction .card-title:hover {
   color: #120E00;
 }
@@ -1329,6 +1370,7 @@ span.nav-link:hover {
 }
 
 @media screen and (max-width: 576px) {
+  .card.auction .card-title a,
   .card.auction .card-title {
     -webkit-line-clamp: 4;
   }

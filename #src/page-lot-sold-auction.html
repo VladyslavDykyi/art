@@ -253,6 +253,26 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 <script src="./js/pages/page-slider-lot.min.js"></script>
+<!-- 30.10.2023 виніс блок js кода -->
+<script>
+  window.onload = function() {
+    const auctionStatusText = document.querySelector('.lot-text-description');
+    const btnReadMore = document.querySelector('[data-id="readMore"]');
+
+    if (auctionStatusText.scrollHeight > 410) {
+      btnReadMore.classList.add('active');
+    }
+
+    btnReadMore.addEventListener('click', function() {
+      auctionStatusText.classList.toggle('active');
+      if (auctionStatusText.classList.contains('active')) {
+        btnReadMore.innerHTML = 'Read Less <i class="bi bi-chevron-up"></i>';
+      } else {
+        btnReadMore.innerHTML = 'Read More <i class="bi bi-chevron-down"></i>';
+      }
+    });
+  };
+</script>
 <script>
   $('.select2-theme').select2({
     minimumResultsForSearch: -1,

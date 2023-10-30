@@ -163,17 +163,22 @@
 	&-text-description {
 		color: #120E00;
 		font-size: 1.125rem;
-		margin-bottom: 2px;
-		display: -webkit-box;
-		-webkit-line-clamp: 15;
-		-webkit-box-orient: vertical;
+	}
+	&-text-description {
 		overflow: hidden;
-
+		max-height: 410px;
 		&.active {
-			-webkit-line-clamp: 1000;
+			display: block;
+			overflow: visible;
+			max-height: none;
 		}
 	}
-
+	& [data-id="readMore"] {
+		display: none !important;
+		&.active {
+			display: flex !important;
+		}
+	}
 	&-link {
 		color: #5F5F5F;
 		border: none;
@@ -183,12 +188,6 @@
 
 		&:hover {
 			color: #2D7158;
-		}
-
-		&.active {
-			& i {
-				transform: rotateX(180deg);
-			}
 		}
 	}
 }

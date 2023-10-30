@@ -40,6 +40,29 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 <script src="./js/pages/page-current-auction.min.js"></script>
+<!-- 30.10.2023 виніс js код -->
+<script>
+	window.onload = function() {
+		const auctionStatusText = document.querySelector('.auction-status-text');
+		const btnReadMore = document.querySelector('.read-more');
+
+		if (auctionStatusText.scrollHeight > auctionStatusText.clientHeight) {
+			btnReadMore.classList.add(`active`);
+		}
+
+		btnReadMore.addEventListener('click', function() {
+			if (auctionStatusText.classList.contains('active')) {
+				auctionStatusText.style.maxHeight = '100px';
+				auctionStatusText.classList.remove('active');
+				btnReadMore.innerHTML = 'Read More';
+			} else {
+				auctionStatusText.style.maxHeight = auctionStatusText.scrollHeight + 'px';
+				auctionStatusText.classList.add('active');
+				btnReadMore.innerHTML = 'Read Less';
+			}
+		});
+	};
+</script>
 <script>
 	$('.select2-modal-wrapper').select2({
 		minimumResultsForSearch: -1,

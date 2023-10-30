@@ -178,6 +178,22 @@ body {
   font-weight: 400;
 }
 
+button.btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  grid-gap: 12px !important;
+}
+
 .wrapper {
   margin-bottom: 60px;
   margin-top: 36px;
@@ -192,7 +208,8 @@ body {
 .btn-auction {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #F4F8F6;
+  background-color: #F4F8F6 !important;
+  -webkit-appearance: none;
   border-color: #B7B6B2;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -202,25 +219,26 @@ body {
 }
 
 .btn-auction:hover {
-  background-color: #409B7A;
+  background-color: #409B7A !important;
   border-color: #409B7A;
   color: #FFF;
 }
 
 .btn-auction:active {
-  background-color: #29654F;
+  background-color: #29654F !important;
   border-color: #29654F;
 }
 
 .btn-auction:disabled {
-  background-color: #B7B6B2;
+  background-color: #B7B6B2 !important;
   border-color: #B7B6B2;
 }
 
 .btn.btn-success {
   font-size: 1.125rem;
   line-height: 165%;
-  background-color: #2D7158;
+  background-color: #2D7158 !important;
+  -webkit-appearance: none;
   border-color: #2D7158;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -229,40 +247,41 @@ body {
 }
 
 .btn.btn-success:hover {
-  background-color: #409B7A;
+  background-color: #409B7A !important;
   border-color: #409B7A;
 }
 
 .btn.btn-success:active {
-  background-color: #29654F;
+  background-color: #29654F !important;
   border-color: #29654F;
 }
 
 .btn.btn-success:disabled {
-  background-color: #B7B6B2;
+  background-color: #B7B6B2 !important;
   border-color: #B7B6B2;
 }
 
 .btn.btn-outline-success {
-  background-color: transparent;
+  background-color: transparent !important;
+  -webkit-appearance: none;
   border-color: #2D7158;
   color: #2D7158;
 }
 
 .btn.btn-outline-success:hover {
-  background-color: #409B7A;
+  background-color: #409B7A !important;
   border-color: #409B7A;
   color: #FFF;
 }
 
 .btn.btn-outline-success:active {
-  background-color: #29654F;
+  background-color: #29654F !important;
   border-color: #29654F;
   color: #FFF;
 }
 
 .btn.btn-outline-success.active {
-  background-color: #2D7158;
+  background-color: #2D7158 !important;
   color: #FFF;
 }
 
@@ -926,6 +945,36 @@ body {
   text-align: right;
 }
 
+.auction-form-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.auction-form-wrapper .auction-form-item {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-flex-shrink: 2;
+      -ms-flex-negative: 2;
+          flex-shrink: 2;
+}
+
+.auction-form-wrapper .auction-form-item .input-group {
+  width: auto;
+}
+
+.auction-form-wrapper .btn-danger {
+  height: 100%;
+  min-width: 160px;
+}
+
 .auction-form-item:last-child .btn-danger {
   margin-left: auto;
   display: block;
@@ -948,19 +997,30 @@ body {
 }
 
 .auction-form-item > label {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .auction-form-item input {
-  width: 100%;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-flex-shrink: 2;
+      -ms-flex-negative: 2;
+          flex-shrink: 2;
   text-align: right;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  padding: 21px 32px;
+  padding: 21px 42px 21px 32px;
   border: 1px solid #B7B6B2;
   color: #120E00;
   font-size: 2.75rem;
   line-height: normal;
+  width: -webkit-calc(100% - 55px);
+  width: calc(100% - 55px);
 }
 
 .auction-form-item input::-webkit-input-placeholder {
@@ -989,6 +1049,15 @@ body {
 
 .auction-form-item input:focus {
   outline: none;
+}
+
+.auction-form-item .input-group-text {
+  width: 55px;
+  font-size: 2.75rem;
+  color: #120E00;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-left-color: #B7B6B2;
 }
 
 .current-purely-viewable {
@@ -1253,6 +1322,22 @@ body {
   .auction-form-item input {
     font-size: 2rem;
     padding: 12px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .auction-form-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .auction-form-wrapper .auction-form-item {
+    margin-bottom: 16px;
+  }
+
+  .auction-form-wrapper .btn-danger {
+    width: 100%;
   }
 }
 
