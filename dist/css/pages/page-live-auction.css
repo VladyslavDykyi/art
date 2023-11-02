@@ -1317,11 +1317,16 @@ button.btn {
   .auction-form-item:last-child .btn-danger {
     font-size: 1.125rem;
     max-width: 100%;
+    padding: 12px;
   }
 
   .auction-form-item input {
-    font-size: 2rem;
+    font-size: 1.125rem;
     padding: 12px;
+  }
+
+  .auction-form-item .input-group-text {
+    font-size: 1.125rem;
   }
 }
 

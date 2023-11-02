@@ -276,6 +276,7 @@
 					@media screen and (max-width: 768px) {
 						font-size: 1.125rem;
 						max-width: 100%;
+						padding: 12px;
 					}
 					&:hover {
 						background-color: #f65b47;
@@ -300,7 +301,7 @@
 				line-height: normal;
 				width: calc(100% - 55px);
 				@media screen and (max-width: 768px) {
-					font-size: 2rem;
+					font-size: 1.125rem;
 					padding: 12px;
 				}
 				@media screen and (max-width: 680px) {
@@ -323,6 +324,9 @@
 				background-color: #FFFFFF;
 				border-color: #FFFFFF;
 				border-left-color: #B7B6B2;
+				@media screen and (max-width: 768px) {
+					font-size: 1.125rem;
+				}
 			}
 		}
 	}
