@@ -336,6 +336,10 @@ button.btn {
   grid-gap: 12px !important;
 }
 
+.c-red {
+  color: #CF331E !important;
+}
+
 .wrapper {
   margin-bottom: 60px;
   margin-top: 36px;
