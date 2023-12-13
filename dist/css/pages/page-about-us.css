@@ -2,6 +2,11 @@ header > nav > div:first-child {
   border-bottom: 1px solid rgba(95, 95, 95, 0.2);
 }
 
+.languages-mob,
+.cards-mob {
+  display: none;
+}
+
 header a.nav-link,
 header span.nav-link,
 header a.dropdown-item {
@@ -917,6 +922,27 @@ button.btn {
 
   .about-goal iframe {
     min-height: 350px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .navbar-brand img {
+    width: 90px;
+    height: auto;
+  }
+
+  .languages-mob,
+  .cards-mob {
+    display: block;
+  }
+
+  .navbar-nav .languages,
+  .navbar-nav .cards {
+    display: none;
   }
 }
 

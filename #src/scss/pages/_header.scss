@@ -1,6 +1,32 @@
 header > nav > div:first-child {
 	border-bottom: 1px solid rgba(95, 95, 95, 0.2);
 }
+.navbar-brand {
+	@media screen and (max-width: 991px) {
+		margin-right: 0;
+	}
+	& img {
+		@media screen and (max-width: 991px) {
+			width: 90px;
+			height: auto;
+		}
+	}
+}
+.languages-mob,
+.cards-mob {
+	display: none;
+	@media screen and (max-width: 991px) {
+		display: block;
+	}
+}
+.navbar-nav {
+	& .languages,
+	& .cards {
+		@media screen and (max-width: 991px) {
+			display: none;
+		}
+	}
+}
 header a.nav-link,
 header span.nav-link,
 header a.dropdown-item {

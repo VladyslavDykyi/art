@@ -10,14 +10,32 @@
 			<a class="navbar-brand" href="./page-home.html">
 				<img src="./img/img.png" alt="Bootstrap" width="178" height="79">
 			</a>
+			<!-- 13.12.2023 зміна хедера блок додався початок  -->
+			<div class="nav-item dropdown languages-mob">
+				<span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+					  aria-expanded="false">
+					EN
+				</span>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">EN</a></li>
+					<li><a class="dropdown-item" href="#">UK</a></li>
+					<li><a class="dropdown-item" href="#">FR</a></li>
+				</ul>
+			</div>
+			<div class="nav-item cards-mob">
+				<a class="nav-link bag mx-3" href="#">
+					<i class="bi bi-bag"></i>
+					<!-- додав span для лічильника якщо елементів 0 його треба видалити-->
+					<span class="bag-count">2</span>
+				</a>
+			</div>
+			<!-- 13.12.2023 зміна хедера блок додався кінець  -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
 					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarScroll">
-				<!-- 16.09.23 зверни увагу на класи у списку нижче -->
 				<ul class="navbar-nav me-auto my-2 my-lg-0 align-items-baseline" style="--bs-scroll-height: 100px;">
-				<!-- 16.09.23 зверни увагу на класи у списку вище -->
 					<li class="nav-item">
 						<a class="nav-link  buy-now" aria-current="page" href="./page-buy-now.html">Buy now</a>
 					</li>
@@ -50,11 +68,10 @@
 					<li class="nav-item">
 						<a class="nav-link" href="./page-FAQ.html">FAQ</a>
 					</li>
-					<!-- 19.07.2023 тут вирізав випадашку язиків -->
 				</ul>
 				<ul class="navbar-nav align-items-center">
-					<!-- 19.07.2023 тут вставив випадашку язиків -->
-					<li class="nav-item dropdown">
+					<!-- 13.12.2023 зміна хедера блок додався клас languages -->
+					<li class="nav-item dropdown languages">
 						<span class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
 							  aria-expanded="false">
 							EN
@@ -65,8 +82,8 @@
 							<li><a class="dropdown-item" href="#">FR</a></li>
 						</ul>
 					</li>
-					<li class="nav-item">
-						<!-- 01.08.2023 додав клас bag -->
+					<!-- 13.12.2023 зміна хедера блок додався клас cards -->
+					<li class="nav-item cards">
 						<a class="nav-link bag mx-3" href="#">
 							<i class="bi bi-bag"></i>
 							<!-- додав span для лічильника якщо елементів 0 його треба видалити-->
