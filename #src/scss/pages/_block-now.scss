@@ -9,6 +9,7 @@
 .card {
 	border: none;
 	height: 100%;
+	position: relative;
 	&-img-top {
 		height: 350px;
 		object-fit: contain;
@@ -55,5 +56,6 @@
 			border-radius: 50%;
 			border: 5px solid transparent;
 		}
+
 	}
 }

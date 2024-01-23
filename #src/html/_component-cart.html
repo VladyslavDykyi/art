@@ -1,16 +1,21 @@
 <div class="col-12 col-sm-6 col-xl-3">
 	<div class="card">
-		<!-- 26.09.2023 додавання авто слайдеру додав id і атрибут data-bs-ride нижче -->
-		<div class="carousel carousel-dark slide"  data-id="1" data-bs-ride="carousel" id="carouselExampleInterval">
-			<!-- 26.09.2023 додавання авто додав id і атрибут data-bs-ride вище -->
+		<!-- 23.01.2024 кнопка для обирання фавориту -->
+		<div class="favorite">
+			<!-- клас liked з'являється у кнопки коли товар обраний якщо не обраний тоді його немає -->
+			<button class="favorite-btn liked" type="button">
+				<i class="bi bi-heart"></i>
+			</button>
+		</div>
+		<div class="carousel carousel-dark slide" data-id="1" data-bs-ride="carousel" id="carouselExampleInterval">
 			<div class="carousel-inner">
 				<a class="carousel-item active" href="#">
 					<img src="./img/image.png" class="card-img-top" alt="">
 				</a>
-				<a class="carousel-item " href="#" >
+				<a class="carousel-item " href="#">
 					<img src="./img/image.png" class="card-img-top" alt="">
 				</a>
-				<a class="carousel-item " href="#" >
+				<a class="carousel-item " href="#">
 					<img src="./img/image.png" class="card-img-top" alt="">
 				</a>
 			</div>
@@ -22,6 +27,14 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
 			</button>
+			<!-- 23.01.2024 показник аукціону Leading -->
+			<!-- <div class="marker-leading"> -->
+			<!-- Leading -->
+			<!-- </div> -->
+			<!-- 23.01.2024 показник аукціону Outbid -->
+			<div class="marker-outbid">
+				Outbid
+			</div>
 		</div>
 		<div class="card-body">
 			<h5 class="card-title fs-4">Javier Crus</h5>

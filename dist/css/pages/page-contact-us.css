@@ -58,7 +58,7 @@ header a.buy-now {
 }
 
 .bi {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .navbar-nav .nav-link.active,
@@ -222,6 +222,51 @@ button.btn {
       -ms-flex-pack: center !important;
           justify-content: center !important;
   grid-gap: 12px !important;
+}
+
+.marker-leading,
+.marker-outbid {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 165%;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.marker-leading {
+  background-color: #409B7A;
+}
+
+.marker-outbid {
+  background-color: #ec533f;
+}
+
+.favorite {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  z-index: 10;
+}
+
+.favorite-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.favorite-btn.liked i {
+  color: #CF331E;
+}
+
+.favorite-btn i {
+  color: #2D7158;
+}
+
+.favorite-btn:hover i {
+  color: #CF331E;
 }
 
 .c-red {
