@@ -1167,6 +1167,10 @@ span.nav-link:hover {
   color: #2D7158;
 }
 
+.lot-info-bid.grey {
+  color: #5F5F5F;
+}
+
 .lot-btn-buy {
   width: 100%;
   margin-bottom: 8px;

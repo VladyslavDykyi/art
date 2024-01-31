@@ -55,6 +55,13 @@
 			height: 8px;
 			background-color: #CF331E;
 		}
+		&-item {
+			position: relative;
+			& .favorite {
+				left: 100px;
+				top: 10px;
+			}
+		}
 	}
 	&-lot {
 		display: flex;
@@ -72,6 +79,9 @@
 			padding: 12px 4px 4px;
 			border-bottom: none;
 			border-right: 1px solid #B7B6B2;
+		}
+		& > span {
+			position: relative;
 		}
 		&:last-child {
 			border-bottom: none;
@@ -307,11 +317,12 @@
 					margin-left: auto;
 					display: block;
 					border-radius: 4px;
-					max-width: 340px;
+					max-width: 100%;
 					width: 100%;
 					font-size: 1.5rem;
 					line-height: normal;
 					padding: 1rem;
+					margin-top: 16px;
 					@media screen and (max-width: 768px) {
 						font-size: 1.125rem;
 						max-width: 100%;

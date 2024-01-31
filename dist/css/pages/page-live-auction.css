@@ -847,6 +847,15 @@ button.btn {
   background-color: #CF331E;
 }
 
+.auction-list-item {
+  position: relative;
+}
+
+.auction-list-item .favorite {
+  left: 100px;
+  top: 10px;
+}
+
 .auction-lot {
   display: -webkit-box;
   display: -webkit-flex;
@@ -860,6 +869,10 @@ button.btn {
   padding: 12px 10px 12px 16px;
   text-decoration: none;
   border-bottom: 1px solid #B7B6B2;
+}
+
+.auction-lot > span {
+  position: relative;
 }
 
 .auction-lot:last-child {
@@ -1107,11 +1120,12 @@ button.btn {
   display: block;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  max-width: 340px;
+  max-width: 100%;
   width: 100%;
   font-size: 1.5rem;
   line-height: normal;
   padding: 1rem;
+  margin-top: 16px;
 }
 
 .auction-form-item:last-child .btn.btn-success {
