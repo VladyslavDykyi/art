@@ -33,11 +33,11 @@ button.btn {
 }
 
 .marker-leading {
-  background-color: #409B7A;
+  background-color: #2D7158;
 }
 
 .marker-outbid {
-  background-color: #ec533f;
+  background-color: #bf1616;
 }
 
 .favorite {
@@ -526,6 +526,19 @@ span.nav-link:hover {
   opacity: 1;
 }
 
+.modal-content.increase {
+  height: auto;
+}
+
+.modal-content.increase .modal-body {
+  margin-top: 0;
+  padding: 0 30px 16px;
+}
+
+.modal-content.increase .modal-body-title {
+  margin-top: 0;
+}
+
 .modal-header {
   border-bottom: none;
   position: relative;
@@ -676,6 +689,14 @@ span.nav-link:hover {
   font-size: 2rem;
   color: #120E00;
   margin-bottom: 12px;
+}
+
+.modal-body a.modal-body-text {
+  color: #2D7158;
+}
+
+.modal-body a.modal-body-text:hover {
+  color: #409B7A;
 }
 
 .modal-body-text {

@@ -25,6 +25,8 @@
 </main>
 @@include('./html/_footer.html')
 @@include('./html/_modal-pas-and-email.html')
+<!-- 31.01.2024 модалка -->
+@@include('./html/_modal-pay-lot.html')
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -34,6 +36,10 @@
 	$('.select2-wrapper').select2({
 		minimumResultsForSearch: -1,
 		placeholder: "Country",
+	});
+	<!-- 31.01.2024 -->
+	$('.mySelect-increase').select2({
+		minimumResultsForSearch: -1,
 	});
 </script>
 </body>

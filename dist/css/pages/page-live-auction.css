@@ -212,11 +212,11 @@ button.btn {
 }
 
 .marker-leading {
-  background-color: #409B7A;
+  background-color: #2D7158;
 }
 
 .marker-outbid {
-  background-color: #ec533f;
+  background-color: #bf1616;
 }
 
 .favorite {
@@ -437,6 +437,19 @@ button.btn {
   opacity: 1;
 }
 
+.modal-content.increase {
+  height: auto;
+}
+
+.modal-content.increase .modal-body {
+  margin-top: 0;
+  padding: 0 30px 16px;
+}
+
+.modal-content.increase .modal-body-title {
+  margin-top: 0;
+}
+
 .modal-header {
   border-bottom: none;
   position: relative;
@@ -587,6 +600,14 @@ button.btn {
   font-size: 2rem;
   color: #120E00;
   margin-bottom: 12px;
+}
+
+.modal-body a.modal-body-text {
+  color: #2D7158;
+}
+
+.modal-body a.modal-body-text:hover {
+  color: #409B7A;
 }
 
 .modal-body-text {
@@ -982,12 +1003,62 @@ button.btn {
   border: 1px solid #B7B6B2;
   background-color: #F4F8F6;
   margin-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .auction-list-bet-item span {
   color: #120E00;
   font-size: 1.125rem;
   line-height: normal;
+}
+
+.auction-list-bet-item span:first-of-type {
+  font-weight: 600;
+}
+
+.auction-list-bet-item span:last-of-type {
+  font-weight: 400;
+}
+
+.auction-list-bet-item.system {
+  background-color: rgba(223, 223, 223, 0.5);
+}
+
+.auction-list-bet-item.danger {
+  background-color: rgba(255, 209, 209, 0.2);
+  border-color: #CF331E;
+}
+
+.auction-list-bet-item.danger span {
+  color: #CF331E;
+}
+
+.auction-list-bet-item.my-bid {
+  background-color: rgba(163, 251, 220, 0.2);
+  border-color: #2D7158;
+  margin-left: auto;
+}
+
+.auction-list-bet-item.my-bid span {
+  color: #2D7158;
+}
+
+.auction-list-bet-item.current {
+  background-color: rgba(163, 251, 220, 0.2);
+  border-color: transparent;
+  margin: 0 -12px 10px;
+  padding: 10px 24px;
+  width: auto;
+}
+
+.auction-list-bet-item.current span {
+  color: #120E00;
+}
+
+.auction-list-bet-item.current span:first-of-type {
+  font-weight: 600;
 }
 
 .auction-form-rate {
@@ -1024,17 +1095,18 @@ button.btn {
   width: auto;
 }
 
+.auction-form-wrapper .btn-grey,
+.auction-form-wrapper .btn-success,
 .auction-form-wrapper .btn-danger {
   height: 100%;
   min-width: 160px;
 }
 
-.auction-form-item:last-child .btn-danger {
+.auction-form-item:last-child .btn {
   margin-left: auto;
   display: block;
   -webkit-border-radius: 4px;
           border-radius: 4px;
-  background-color: #CF331E;
   max-width: 340px;
   width: 100%;
   font-size: 1.5rem;
@@ -1042,12 +1114,41 @@ button.btn {
   padding: 1rem;
 }
 
-.auction-form-item:last-child .btn-danger:hover {
+.auction-form-item:last-child .btn.btn-success {
+  background-color: #2D7158;
+}
+
+.auction-form-item:last-child .btn.btn-success:hover {
+  background-color: #409B7A;
+}
+
+.auction-form-item:last-child .btn.btn-success:active {
+  background-color: #29654F;
+}
+
+.auction-form-item:last-child .btn.btn-danger {
+  background-color: #CF331E;
+}
+
+.auction-form-item:last-child .btn.btn-danger:hover {
   background-color: #f65b47;
 }
 
-.auction-form-item:last-child .btn-danger:active {
+.auction-form-item:last-child .btn.btn-danger:active {
   background-color: #d12711;
+}
+
+.auction-form-item:last-child .btn.btn-grey {
+  background-color: #878787;
+  color: #FFFFFF;
+}
+
+.auction-form-item:last-child .btn.btn-grey:hover {
+  background-color: #a5a5a5;
+}
+
+.auction-form-item:last-child .btn.btn-grey:active {
+  background-color: #999999;
 }
 
 .auction-form-item > label {
@@ -1389,7 +1490,7 @@ button.btn {
     margin-top: 24px;
   }
 
-  .auction-form-item:last-child .btn-danger {
+  .auction-form-item:last-child .btn {
     font-size: 1.125rem;
     max-width: 100%;
     padding: 12px;
@@ -1416,6 +1517,8 @@ button.btn {
     margin-bottom: 16px;
   }
 
+  .auction-form-wrapper .btn-grey,
+  .auction-form-wrapper .btn-success,
   .auction-form-wrapper .btn-danger {
     width: 100%;
   }

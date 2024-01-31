@@ -217,10 +217,48 @@
 			border: 1px solid #B7B6B2;
 			background-color: #F4F8F6;
 			margin-bottom: 10px;
+			width: fit-content;
 			& span {
 				color: #120E00;
 				font-size: 1.125rem;
 				line-height: normal;
+				&:first-of-type {
+					font-weight: 600;
+				}
+				&:last-of-type {
+					font-weight: 400;
+				}
+			}
+			&.system {
+				background-color: rgba(223, 223, 223, 0.5);
+			}
+			&.danger {
+				background-color: rgba(255, 209, 209, 0.2);
+				border-color: #CF331E;
+				& span {
+					color: #CF331E;
+				}
+			}
+			&.my-bid {
+				background-color: rgba(163, 251, 220, 0.2);
+				border-color: #2D7158;
+				margin-left: auto;
+				& span {
+					color: #2D7158;
+				}
+			}
+			&.current {
+				background-color: rgba(163, 251, 220, 0.2);
+				border-color: transparent;
+				margin: 0 -12px 10px;
+				padding: 10px 24px;
+				width: auto;
+				& span {
+					color: #120E00;
+					&:first-of-type {
+						font-weight: 600;
+					}
+				}
 			}
 		}
 	}
@@ -253,6 +291,8 @@
 					width: auto;
 				}
 			}
+			& .btn-grey,
+			& .btn-success,
 			& .btn-danger {
 				height: 100%;
 				min-width: 160px;
@@ -263,11 +303,10 @@
 		}
 		&-item {
 			&:last-child {
-				& .btn-danger {
+				& .btn {
 					margin-left: auto;
 					display: block;
 					border-radius: 4px;
-					background-color: #CF331E;
 					max-width: 340px;
 					width: 100%;
 					font-size: 1.5rem;
@@ -278,13 +317,36 @@
 						max-width: 100%;
 						padding: 12px;
 					}
-					&:hover {
-						background-color: #f65b47;
+					&.btn-success {
+						background-color: #2D7158;
+						&:hover {
+							background-color: #409B7A;
+						}
+						&:active {
+							background-color: #29654F;
+						}
 					}
-					&:active {
-						background-color: #d12711;
+					&.btn-danger {
+						background-color: #CF331E;
+						&:hover {
+							background-color: #f65b47;
+						}
+						&:active {
+							background-color: #d12711;
+						}
+					}
+					&.btn-grey {
+						background-color: #878787;
+						color: #FFFFFF;
+						&:hover {
+							background-color: #a5a5a5;
+						}
+						&:active {
+							background-color: #999999;
+						}
 					}
 				}
+
 			}
 			& > label {
 				display: flex;

@@ -66,11 +66,27 @@
 		color: #5F5F5F;
 		font-size: 1.25rem;
 		margin-bottom: 8px;
+		&-info {
+			color: #5F5F5F;
+			font-size: 1rem;
+			margin-top: 16px;
+			margin-bottom: 8px;
+		}
 	}
-
+	&-info-bid {
+		color: #5F5F5F;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		&.red {
+			color: #CF331E;
+		}
+		&.green {
+			color: #2D7158;
+		}
+	}
 	&-btn-buy {
 		width: 100%;
-		margin-bottom: 32px;
+		margin-bottom: 8px;
 		font-size: 1.25rem;
 		margin-top: 16px;
 	}
@@ -109,7 +125,6 @@
 		display: flex;
 		grid-gap: 12px;
 		margin-bottom: 16px;
-
 		&-img {
 			width: 116px;
 			height: 92px;
@@ -157,6 +172,7 @@
 		font-weight: 600;
 		color: #120E00;
 		margin-bottom: 8px;
+		margin-top: 24px;
 	}
 
 	&-text-description p,

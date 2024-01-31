@@ -63,19 +63,33 @@
 					Start in: 9 d 5 h 24 m
 				</p>
 			</div>
-			<p class="lot-label">Starting Bid</p>
+			<!-- 30.01.2024 доданий блок -->
+			<div class="lot-info-bid green">
+				<p>
+					you`re the leading bidder!
+				</p>
+			</div>
+			<div class="lot-info-bid red">
+				<p>
+					sorry, your bid lost.
+				</p>
+			</div>
+			<div class="lot-info-bid red">
+				<p>
+					you`ve been outbid!
+				</p>
+			</div>
+			<p class="lot-label-info">
+				Current Price (3 bids)
+			</p>
 			<div class="lot-price">
 				<p>4 500$</p>
-				<span>3 Bids</span>
 			</div>
-			<form class="lot-form" action="#">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Enter 600$ or more">
-					<!--	<a class="btn btn-success" href="#">Register to Bid</a>-->
-					<button class="btn btn-success" type="submit">Place a Bid</button>
-					<!--	чи посилання на рег чи кнопка-->
-				</div>
-			</form>
+			<button class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#exampleModalToggle20" type="button">Place a Bid</button>
+			<!-- 30.01.2024 доданий блок -->
+			<p class="lot-label-info">
+				7 bidders are watching this item.
+			</p>
 			<h2 class="lot-title-auction fs-4">Auction Description</h2>
 			<div class="lot-description">
 				<img class="lot-description-img" src="./img/image11.jpg" alt="">

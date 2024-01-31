@@ -38,7 +38,20 @@
 		& .btn-close {
 			 opacity: 1;
 		}
+		&.increase {
+			height: auto;
+			& .modal-body {
+				margin-top: 0;
+				padding: 0 30px 16px;
+				&-title {
+					margin-top: 0;
+				}
+			}
+		}
+		& .increase-form {
+		}
 	}
+
 	&-header {
 		border-bottom: none;
 		position: relative;
@@ -162,9 +175,16 @@
 				font-size: 1.75rem;
 			}
 		}
+		& a.modal-body-text {
+			color: #2D7158;
+			&:hover {
+				color: #409B7A;
+			}
+		}
 		&-text {
 			font-size: 1.125rem;
 			color: #120E00;
+
 		}
 	}
 }
