@@ -815,7 +815,9 @@ button.btn {
 }
 
 .personal-data-links a.btn {
-  max-width: 200px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   color: #5F5F5F;
   -webkit-border-radius: 4px;
           border-radius: 4px;
