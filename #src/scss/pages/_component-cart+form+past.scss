@@ -60,6 +60,10 @@
 		&:hover {
 			color: #120E00;
 		}
+		& a {
+			text-decoration: none;
+			color: inherit;
+		}
 	}
 	& .card-text {
 		margin-bottom: 8px;

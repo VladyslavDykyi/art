@@ -444,6 +444,12 @@ span.nav-link:hover {
   color: #120E00;
 }
 
+.card.auction .card-title a a,
+.card.auction .card-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card.auction .card-text {
   margin-bottom: 8px;
   color: #5F5F5F;
